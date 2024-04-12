@@ -20,8 +20,8 @@ def __str__ (self):
 
 class Sleep(models.Model):
     Date=models.DateField()
-    Starttime=models.TimeField()
-    Endtime=models.TimeField()
+    Starttime=models.DateTimeField()
+    Endtime=models.DateTimeField()
 
 class Meta:
     db_table = "Sleep"
